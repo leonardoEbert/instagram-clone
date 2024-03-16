@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_03_16_035228) do
+ActiveRecord::Schema[7.1].define(version: 2024_03_16_214738) do
   create_schema "insta"
 
   # These are extensions that must be enabled in order to support this database
@@ -50,6 +50,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_03_16_035228) do
     t.string "keywords"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "user_id"
   end
 
   create_table "users", force: :cascade do |t|
